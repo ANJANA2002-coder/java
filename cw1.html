@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // Number of items sold (number)
+var tshirtQty = 5;
+var capQty = 3;
+
+// Prices of items (number)
+var tshirtPrice = 400;
+var capPrice = 150;
+
+// Calculate earnings
+var tshirtEarning = tshirtQty * tshirtPrice;
+var capEarning = capQty * capPrice;
+
+// Total earnings
+var totalEarnings = tshirtEarning + capEarning;
+
+// Display total earnings
+console.log("Total earnings: ₹" + totalEarnings);
+
+// Change price of t-shirts
+tshirtPrice = 450;
+
+// Recalculate earnings
+tshirtEarning = tshirtQty * tshirtPrice;
+totalEarnings = tshirtEarning + capEarning;
+
+// Display updated total
+console.log("Updated total earnings: ₹" + totalEarnings);
+
+</script>
+
+    
+</body>
+</html>
