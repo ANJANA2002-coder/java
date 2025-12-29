@@ -7,43 +7,43 @@
 </head>
 <body>
     <script>
-        // Item names (string)
+        
 var item1 = "Rice";
 var item2 = "Sugar";
 var item3 = "Wheat";
 
-// Prices per kg (number)
+
 var ricePrice = 50;
 var sugarPrice = 40;
 var wheatPrice = 45;
 
-// Quantities purchased in kg (number)
+
 var riceQty = 2;
 var sugarQty = 1;
 var wheatQty = 3;
 
-// Cost for each item
+
 var riceCost = ricePrice * riceQty;
 var sugarCost = sugarPrice * sugarQty;
 var wheatCost = wheatPrice * wheatQty;
 
-// Display individual costs
+
 console.log(item1 + " cost: ₹" + riceCost);
 console.log(item2 + " cost: ₹" + sugarCost);
 console.log(item3 + " cost: ₹" + wheatCost);
 
-// Total bill
+
 var totalBill = riceCost + sugarCost + wheatCost;
 console.log("Total bill: ₹" + totalBill);
 
-// Change quantity of one item (example: sugar quantity changed)
+
 sugarQty = 3;
 
-// Recalculate cost and total
+
 sugarCost = sugarPrice * sugarQty;
 totalBill = riceCost + sugarCost + wheatCost;
 
-// Display updated total
+
 console.log("Updated " + item2 + " cost: ₹" + sugarCost);
 console.log("Updated total bill: ₹" + totalBill);
 
