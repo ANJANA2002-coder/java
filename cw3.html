@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         // Given feedback string
+    var feedback = "  I loved the FOOD and the service!  ";
+
+    // 1. Remove extra spaces
+    var cleanedFeedback = feedback.trim();
+
+    // 2. Convert to lowercase
+    cleanedFeedback = cleanedFeedback.toLowerCase();
+
+    // 3. Replace "food" with "ambience"
+    cleanedFeedback = cleanedFeedback.replace("food", "ambience");
+
+    // 4. Find position of the word "service"
+    var position = cleanedFeedback.indexOf("service");
+
+    // 5. Convert string to array of words
+    var wordsArray = cleanedFeedback.split(" ");
+
+    // Output results
+    console.log("Cleaned Feedback:", cleanedFeedback);
+    console.log("Position of 'service':", position);
+    console.log("Words Array:", wordsArray);
+    </script>
+    
+</body>
+</html>

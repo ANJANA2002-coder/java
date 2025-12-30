@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Step 1: Create userProfile object
+    let userProfile = {
+        username: " CoolUser99 ",
+        bio: " I LOVE coding! JavaScript is Great!!! "
+    };
+
+    // Step 2: Create function to clean bio
+    function cleanUserBio(profile) {
+
+        let cleanUsername = profile.username
+            .trim()
+            .toLowerCase();
+
+        let cleanBio = profile.bio
+            .trim()
+            .toLowerCase()
+            .replace(/javascript/g, "js");
+
+        let bioLength = cleanBio.length;
+
+        // Return new object
+        return {
+            username: cleanUsername,
+            bio: cleanBio,
+            bioLength: bioLength
+        };
+    }
+
+    // Step 3: Call function and display result
+    let result = cleanUserBio(userProfile);
+    console.log(result);
+</script>
+
+</body>
+</html>
