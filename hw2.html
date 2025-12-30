@@ -12,16 +12,31 @@
     phone: "000000000",
     email: "anjhgj@gmail.com",
     getInfo: function () {
-        console.log(
+        return(
             "Name: " + this.name +
             ", Phone: " + this.phone +
             ", Email: " + this.email
         );
     }
-};
+        }
+let contact2={
+    name:"Riya",
+    phone:"0123012301",
+    email:"vhahb@gmail.com",
+    getInfo: function () {
+        return(
+            "Name: " + this.name +
+            ", Phone: " + this.phone +
+            ", Email: " + this.email
+        );
+    }
+}
 
-contact1.getInfo();
-
+function printcontactinfo(contact){
+    console.log(contact.getInfo());
+}
+printcontactinfo(contact2);
+printcontactinfo(contact1);
     </script>
 </body>
 </html>
