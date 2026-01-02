@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <h2>User Profile Page</h2>
+
+<button onclick="checkAccess()">Check Admin Access</button>
+
+<p id="result"></p>
+
+<script>
+    // User object
+    let user = {
+        name: "Anjana",
+        age: 22,
+        isAdmin: true
+    };
+
+    function checkAccess() {
+
+        let message = "";
+
+        // Check if age property exists
+        if ("age" in user) {
+
+            // Check access using ternary operator
+            message = (user.age >= 18 && user.isAdmin)
+                ? "Access Granted"
+                : "Access Denied";
+
+            // Delete age property after check
+            delete user.age;
+
+        } else {
+            message = "Age information not available";
+        }
+
+        // Display result
+        document.getElementById("result").innerText = message;
+    }
+    </script>
+</body>
+</html>
