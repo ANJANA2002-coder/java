@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+class User {
+    constructor(name, age, email) {
+        this.name = name;
+        this.age = age;
+        this.email = email;
+    }
+
+    // Getter for name
+    getName() {
+        return this.name;
+    }
+
+    // Getter for age
+    getAge() {
+        return this.age;
+    }
+
+    // Getter for email
+    getEmail() {
+        return this.email;
+    }
+
+    // Setter for email with validation
+    setEmail(newEmail) {
+        if (newEmail.includes("@")) {
+            this.email = newEmail;
+            console.log("Email updated successfully.");
+        } else {
+            console.log("Invalid email format. Update failed.");
+        }
+    }
+}
+
+// Create an object from the class
+let user1 = new User("Anjana", 23, "anjana@example.com");
+
+// Try updating email with incorrect format
+user1.setEmail("anjanaexample.com");
+
+// Try updating email with correct format
+user1.setEmail("anjana@gmail.com");
+
+// Print user details using getters
+console.log("Name:", user1.getName());
+console.log("Age:", user1.getAge());
+console.log("Email:", user1.getEmail());
+</script>
+</body>
+</html>
