@@ -1,38 +1,21 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<html>
 <body>
-    <h1 id="js_du"></h1>
 
-    <script>
-        // var x=10
-        // var y=5
-        // var z=x+y
-        //  var a=4
-        //  var b=7
-        // var c=a+b
-       
-        // document.write(z)
-        // document.write(c)
-        // console.log(z)
-        // function adding(a,b){
-        //     console.log(a+b);
-        // }
-        // adding(10,8);
-        // adding(5,3)
-        function add(x, y) {
-    return (x + y);
-    console.log("This line is after return");
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+Mouse Over Me</div>
+
+<script>
+function mOver(obj) {
+  obj.innerHTML = "Thank You"
 }
-sum_1 = add(10,5);
-sum_2 = add(20,5);
 
-console.log ("The first sum is "+sum_1)
-console.log ("The second sum is "+sum_2)
-    </script>
+function mOut(obj) {
+  obj.innerHTML = "Mouse Over Me"
+}
+</script>
+
 </body>
-</html>
+</html> 

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Special Wishes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style>
+    body {
+      background: linear-gradient(to right, #cac3c4, #1b0732);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .card {
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      margin-top: 50px;
+    }
+    .card-header {
+      background-color: #ff4b5c;
+      color: white;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      text-align: center;
+    }
+    .wish-text {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      display: none;
+    }
+    .btn-custom {
+      background-color: #ff4b5c;
+      color: white;
+      border-radius: 30px;
+    }
+    .btn-custom:hover {
+      background-color: #e63e4c;
+      color: white;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #333;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header">
+            <h2>🎉 Special Wishes for You 🎉</h2>
+          </div>
+          <div class="card-body text-center">
+            <h4 id="friendName">Dear Friend ❤️</h4>
+            <p class="wish-text" id="wishMessage">
+              On this special day, I just want to tell you how amazing you are.
+              May your life be filled with happiness, success, and endless smiles.
+              Thank you for being such a wonderful friend. 🌟
+            </p>
+            <button class="btn btn-custom mt-3" onclick="showWish()">Click for Surprise 🎁</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      Made with ❤️ using HTML, CSS, Bootstrap & JavaScript
+    </footer>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- JavaScript -->
+  <script>
+        function showWish() {
+      document.getElementById('wishMessage').style.display = 'block';
+      document.getElementById('photoSection').style.display = 'block';
+    }
+  </script>
+
+  <!-- Photo Cards Section -->
+  <div class="container" id="photoSection" style="display:none; margin-top:40px;">
+    <h3 class="text-center text-white mb-4">📸 Our Memories</h3>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="image1.jpg" class="card-img-top" alt="Memory 1">
+          <div class="card-body text-center">
+            <p class="card-text">Best Moments ❤️</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="image2.jpg" class="card-img-top" alt="Memory 2">
+          <div class="card-body text-center">
+            <p class="card-text">Forever Friends 🌟</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="image3.jpg" class="card-img-top" alt="Memory 3">
+          <div class="card-body text-center">
+            <p class="card-text">Unforgettable Days 😊</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
